@@ -27,6 +27,9 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi
 
 PRODUCT_SHIPPING_API_LEVEL := 18
 
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
