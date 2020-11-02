@@ -97,9 +97,6 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     persist \
     firmware
 
-# Use mke2fs to create ext4 images
-TARGET_USES_MKE2FS := true
-
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
