@@ -35,11 +35,8 @@ on init
     symlink /sdcard /storage/sdcard0
 
 on fs
-    mount_all ./fstab.flo --early
+    mount_all fstab.flo --early
     restorecon_recursive /persist
-
-    # Start HW service manager early
-    start hwservicemanager
 
 on late-fs
     # Start services for bootanim
@@ -48,7 +45,9 @@ on late-fs
     start bootanim
     start vendor.gralloc-2-0
 
-    mount_all ./fstab.flo --late
+    wait_for_prop hwservicemanager.ready true
+
+    mount_all fstab.flo --late
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
