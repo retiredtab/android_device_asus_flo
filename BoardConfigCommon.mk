@@ -141,6 +141,7 @@ HAVE_ADRENO_SOURCE:= false
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
+include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # Security Patch Level
