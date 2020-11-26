@@ -150,6 +150,10 @@ BUILD_BROKEN_DUP_RULES := true
 
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
+# Widevine
+TARGET_LD_SHIM_LIBS += \
+    /system/vendor/lib/mediadrm/libwvdrmengine.so|/vendor/lib/libprotobuf-cpp-lite-v29.so
+
 # Media HAL
 BOARD_GLOBAL_CFLAGS += -DQCOM_BSP_LEGACY
 BOARD_GLOBAL_CPPFLAGS += -DQCOM_BSP_LEGACY
