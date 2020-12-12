@@ -64,3 +64,6 @@ debug.sf.latch_unsignaled=1
 
 # Display
 persist.hwc.mdpcomp.enable=true
+
+# by default, do not update the recovery image
+persist.vendor.recovery_update=false
