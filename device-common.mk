@@ -284,5 +284,9 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    service.adb.root=1
+
 # Dalvik/HWUI
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
