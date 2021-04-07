@@ -63,6 +63,9 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
 sys.use_fifo_ui=1
 
+# Set fdsan to the warn_once severity level
+debug.fdsan=warn_once
+
 # Display
 persist.hwc.mdpcomp.enable=true
 
