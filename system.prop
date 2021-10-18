@@ -37,6 +37,9 @@ wifi.interface=wlan0
 ro.qc.sensors.wl_dis=true
 ro.qualcomm.sensors.smd=true
 
+# System
+persist.sys.binary_xml=false
+
 # libhwui
 ro.hwui.texture_cache_size=48
 ro.hwui.layer_cache_size=32
