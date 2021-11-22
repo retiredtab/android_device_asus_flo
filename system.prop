@@ -65,6 +65,7 @@ debug.hwui.use_buffer_age=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
 sys.use_fifo_ui=1
+debug.renderengine.backend=threaded
 
 # Set fdsan to the warn_once severity level
 debug.fdsan=warn_once
