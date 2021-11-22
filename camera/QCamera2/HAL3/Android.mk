@@ -16,6 +16,9 @@ LOCAL_SRC_FILES := \
 LOCAL_CFLAGS := -Wall -Werror
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 
+LOCAL_CLANG_CFLAGS += \
+	-Wno-unreachable-code-loop-increment
+
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \
         frameworks/native/include/media/openmax \
