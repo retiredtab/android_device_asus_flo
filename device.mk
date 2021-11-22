@@ -34,4 +34,5 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.flo:$(TARGET_COPY_OUT_RAMDISK)/fstab.flo \
-    $(LOCAL_PATH)/rootdir/etc/fstab.flo:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.flo
+    $(LOCAL_PATH)/rootdir/etc/fstab.flo:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.flo \
+    $(LOCAL_PATH)/rootdir/etc/ueventd.flo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
