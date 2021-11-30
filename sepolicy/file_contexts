@@ -88,8 +88,7 @@
 /system/vendor/bin/init\.qcom\.devwait\.sh             u:object_r:init-qcom-devwait-sh_exec:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software       u:object_r:hal_gatekeeper_default_exec:s0
-
-#/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.4-service\.clearkey       u:object_r:hal_drm_clearkey_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.4-service\.clearkey       u:object_r:hal_drm_clearkey_exec:s0
 
 # Persist firmware filesystem
 /persist/camera_calibration(/.*)? u:object_r:persist_camera_file:s0
