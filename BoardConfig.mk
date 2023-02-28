@@ -24,4 +24,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/rootdir/etc/fstab.flo
 
+TARGET_VENDOR_PROP := device/asus/flo/vendor.prop
+
 include device/asus/flo/BoardConfigCommon.mk
