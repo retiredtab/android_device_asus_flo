@@ -33,6 +33,8 @@ TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_SOURCE := kernel/google/msm
 TARGET_KERNEL_CONFIG := followmsi_defconfig
 
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
 # QCOM Hardware
 BOARD_USES_QCOM_HARDWARE := true
 
