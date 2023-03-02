@@ -2,6 +2,7 @@
 vendor.qcom.bluetooth.soc=pronto
 ro.qualcomm.bt.hci_transport=smd
 ro.bluetooth.hfp.ver=1.6
+bluetooth.core.le.vendor_capabilities.enabled=false
 bluetooth.device.class_of_device=90,2,16
 bluetooth.device.default_name=Nexus 7
 bluetooth.profile.asha.central.enabled?=false
