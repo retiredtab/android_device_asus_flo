@@ -25,6 +25,10 @@ persist.bluetooth.bluetooth_audio_hal.disabled=false
 ro.bluetooth.a2dp_offload.supported=false
 bluetooth.sco.disable_enhanced_connection=1
 
+# Disable media transcoding
+persist.sys.fuse.transcode_user_control=true
+persist.sys.fuse.transcode_enabled=false
+
 # Audio
 # Monitor device rotation for speaker channel swap
 ro.audio.monitorRotation=true
