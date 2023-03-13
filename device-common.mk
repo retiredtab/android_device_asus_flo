@@ -82,7 +82,8 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl
+    camera.device@3.2-impl \
+    OpenCamera
 
 PRODUCT_COPY_FILES += \
     device/asus/flo/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
