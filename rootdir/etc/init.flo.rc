@@ -58,6 +58,10 @@ on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+    # Flash storage isn't a good entropy source, and only causes locking
+    # overhead in the kernel. Turn it off.
+    write /sys/block/mmcblk0/queue/add_random 0
+
     # Busy loop to wait for devices booted by devstart_sh just in case device not ready
     exec - root root system -- /vendor/bin/init.qcom.devwait.sh
 
