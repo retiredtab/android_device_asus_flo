@@ -46,10 +46,6 @@ qcom.hw.aac.encoder=true
 # Media volume steps
 ro.config.media_vol_steps=25
 
-# Qualcomm BT aptXHD
-persist.bt.enableAptX=true
-persist.bt.enableAptXHD=true
-
 # Camera
 camera.disable_zsl_mode=1
 
