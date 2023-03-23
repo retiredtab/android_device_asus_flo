@@ -1,0 +1,3 @@
+# device specific syscalls.
+# extension of services/mediaextractor/minijail/seccomp_policy/mediaextractor-seccomp-arm.policy
+uname:  1
