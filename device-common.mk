@@ -30,6 +30,11 @@ PRODUCT_SHIPPING_API_LEVEL := 18
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
