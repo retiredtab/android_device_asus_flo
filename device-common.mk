@@ -63,8 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    bdAddrLoader \
-    hci_qcomm_init
+    bdAddrLoader
 
 PRODUCT_COPY_FILES += \
     device/asus/flo/rootdir/etc/init.flo.bt.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flo.bt.sh
@@ -111,7 +110,6 @@ PRODUCT_PACKAGES += \
     libgenlock \
     hwcomposer.msm8960 \
     gralloc.msm8960 \
-    copybit.msm8960 \
     memtrack.msm8960
 
 # GPS
@@ -270,7 +268,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service.legacy \
     conn_init \
-    dhcpcd.conf \
     wificond \
     hostapd \
     libwfcu \
@@ -289,9 +286,7 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # Configstore
 PRODUCT_PACKAGES += \
