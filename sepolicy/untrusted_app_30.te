@@ -1,0 +1,2 @@
+#============= untrusted_app_30 ==============
+allow untrusted_app_30 sysfs_graphics:file r_file_perms;

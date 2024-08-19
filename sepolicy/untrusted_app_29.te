@@ -1,0 +1,4 @@
+#============= untrusted_app_29 ==============
+allow untrusted_app_29 qemu_hw_prop:file r_file_perms;
+allow untrusted_app_29 sysfs_graphics:file r_file_perms;
+

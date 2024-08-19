@@ -27,3 +27,7 @@ allow camera sensors_socket:sock_file read;
 # Read camera files from persist filesystem
 allow camera persist_file:dir search;
 r_dir_file(camera, persist_camera_file)
+
+#============= camera ==============
+allow camera default_prop:file r_file_perms;
+allow camera system_data_root_file:dir rw_dir_perms;

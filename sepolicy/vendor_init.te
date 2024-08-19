@@ -1,0 +1,11 @@
+#============= vendor_init ==============
+allow vendor_init bluetooth_prop:property_service set;
+allow vendor_init default_prop:file read;
+allow vendor_init proc:file write;
+allow vendor_init radio_prop:file r_file_perms;
+allow vendor_init system_prop:file r_file_perms;
+allow vendor_init system_prop:property_service set;
+
+set_prop(vendor_init, default_prop)
+allow vendor_init shell_data_file:dir { search };
+set_prop(vendor_init, init_service_status_prop)

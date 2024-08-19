@@ -1,0 +1,2 @@
+#============= storaged ==============
+allow storaged sysfs:file r_file_perms;

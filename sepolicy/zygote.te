@@ -2,3 +2,7 @@ dontaudit zygote proc_cmdline:file r_file_perms;
 
 get_prop(zygote, bluetooth_prop);
 get_prop(zygote, exported_camera_prop);
+
+#============= zygote ==============
+allow zygote device:dir create_dir_perms;
+allow zygote device:file create_file_perms;
