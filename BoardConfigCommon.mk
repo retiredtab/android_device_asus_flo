@@ -134,6 +134,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += device/asus/flo/sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/asus/flo/sepolicy/private
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2016-08-05
