@@ -4,6 +4,9 @@ ro.debuggable=1
 persist.service.adb.enable=1
 persist.sys.usb.config=adb
 
+# BPF
+bpf.progs_loaded=1
+
 # Bluetooth
 vendor.qcom.bluetooth.soc=pronto
 ro.qualcomm.bt.hci_transport=smd
