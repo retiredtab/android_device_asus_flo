@@ -14,7 +14,8 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/../common \
     $(LOCAL_PATH)/../../../ \
     $(LOCAL_PATH)/../../../mm-image-codec/qexif \
-    $(LOCAL_PATH)/../../../mm-image-codec/qomx_core
+    $(LOCAL_PATH)/../../../mm-image-codec/qomx_core \
+    system/core/libutils/include
 
 ifeq ($(strip $(TARGET_USES_ION)),true)
     LOCAL_CFLAGS += -DUSE_ION

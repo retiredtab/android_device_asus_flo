@@ -16,7 +16,8 @@ LOCAL_CFLAGS := $(omx_core_defines)
 OMX_HEADER_DIR := frameworks/native/include/media/openmax
 
 LOCAL_C_INCLUDES := $(OMX_HEADER_DIR)
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/../qexif
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../qexif \
+                    system/core/libutils/include
 
 LOCAL_SRC_FILES := qomx_core.c
 

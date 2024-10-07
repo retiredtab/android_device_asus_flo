@@ -27,6 +27,10 @@ LOCAL_CFLAGS := -DLOG_TAG=\"sensors_wrapper\"
 
 LOCAL_SRC_FILES := sensors_wrapper.cpp
 
+LOCAL_C_INCLUDES := system/core/libcutils/include \
+					hardware/libhardware/include \
+					system/core/libsystem/include
+
 LOCAL_SHARED_LIBRARIES := liblog
 
 include $(BUILD_SHARED_LIBRARY)

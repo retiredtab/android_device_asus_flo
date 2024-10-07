@@ -8,7 +8,10 @@ LOCAL_SRC_FILES := \
     voice_processing_descriptors.c
 
 LOCAL_C_INCLUDES += \
-    $(call include-path-for, audio-effects)
+    $(call include-path-for, audio-effects) \
+    hardware/libhardware/include \
+    system/core/libcutils/include \
+    system/media/audio/include
 
 LOCAL_MODULE := libqcomvoiceprocessingdescriptors
 

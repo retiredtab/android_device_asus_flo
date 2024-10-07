@@ -42,5 +42,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libgps.utils_headers
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
     $(LOCAL_PATH) \
-    $(LOCAL_PATH)/../platform_lib_abstractions
+    $(LOCAL_PATH)/../platform_lib_abstractions \
+    hardware/libhardware/include
 include $(BUILD_HEADER_LIBRARY)
