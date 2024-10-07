@@ -217,12 +217,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # Power
+#PRODUCT_PACKAGES += \
+#    android.hardware.power-service-qti
+
+# Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
 
 # Power Stats
-PRODUCT_PACKAGES += \
-    android.hardware.power.stats@1.0-service.mock
+#PRODUCT_PACKAGES += \
+#    android.hardware.power.stats@1.0-service.mock
 
 # Healthd
 PRODUCT_PACKAGES += \
