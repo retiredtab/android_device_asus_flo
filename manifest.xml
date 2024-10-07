@@ -140,6 +140,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<!--
     <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
@@ -149,6 +150,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+-->
     <hal format="hidl">
         <name>android.hardware.drm</name>
         <transport>hwbinder</transport>

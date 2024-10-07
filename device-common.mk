@@ -93,6 +93,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger_touch
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
