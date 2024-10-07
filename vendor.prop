@@ -97,6 +97,8 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
 sys.use_fifo_ui=1
 debug.renderengine.backend=threaded
+ro.hardware.egl=adreno
+ro.hwui.use_vulkan=false
 
 # Set fdsan to the warn_once severity level
 debug.fdsan=warn_once
