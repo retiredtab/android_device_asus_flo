@@ -36,6 +36,13 @@ TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_SOURCE := kernel/google/msm
 TARGET_KERNEL_CONFIG := followmsi_defconfig
 
+# HIDL
+DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    vendor/lineage/config/device_framework_matrix.xml \
+    device/asus/flo/manifest/framework_compatibility_matrix.xml
+
 # QCOM Hardware
 BOARD_USES_QCOM_HARDWARE := true
 
