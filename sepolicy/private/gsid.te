@@ -1,0 +1,2 @@
+#============= gsid ==============
+allow gsid vendor_file:file r_file_perms;

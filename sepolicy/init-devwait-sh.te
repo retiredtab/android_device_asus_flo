@@ -7,6 +7,3 @@ allow init-qcom-devwait-sh shell_exec:file rx_file_perms;
 
 # execute toybox/toolbox
 allow init-qcom-devwait-sh toolbox_exec:file rx_file_perms;
-
-#============= init-qcom-devwait-sh ==============
-allow init-qcom-devwait-sh system_prop:file r_file_perms;

@@ -24,16 +24,3 @@ allow init {
     sysfs_usb
     sysfs_wlan_fwpath
 }:file setattr;
-
-#============= init ==============
-allow init hal_drm_hwservice:hwservice_manager { add find };
-allow init hidl_base_hwservice:hwservice_manager add;
-allow init hwservicemanager:binder { call transfer };
-allow init vndbinder_device:chr_file rw_file_perms;
-
-allow init app_data_file:dir { getattr relabelfrom };
-allow init privapp_data_file:dir { getattr relabelfrom };
-allow init seapp_contexts_file:file r_file_perms;
-allow init shell_data_file:dir relabelfrom;
-allow init system_app_data_file:dir { getattr relabelfrom };
-allow init vendor_file:file { execute execute_no_trans };

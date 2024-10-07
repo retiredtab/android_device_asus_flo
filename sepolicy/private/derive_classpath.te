@@ -1,0 +1,2 @@
+#============= derive_classpath ==============
+allow derive_classpath vendor_file:file r_file_perms;

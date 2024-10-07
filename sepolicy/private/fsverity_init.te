@@ -1,0 +1,2 @@
+#============= fsverity_init ==============
+allow fsverity_init vendor_file:file r_file_perms;

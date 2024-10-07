@@ -1,0 +1,2 @@
+#============= art_boot ==============
+allow art_boot vendor_file:file r_file_perms;

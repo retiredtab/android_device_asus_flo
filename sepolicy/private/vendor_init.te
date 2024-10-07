@@ -1,2 +1,4 @@
 #============= vendor_init ==============
-get_prop(vendor_init, init_service_status_private_prop)
+allow vendor_init init_service_status_private_prop:file r_file_perms;
+allow vendor_init recovery_update_prop:property_service set;
+

@@ -3,4 +3,5 @@ allow surfaceflinger sysfs_soc:dir r_dir_perms;
 allow surfaceflinger sysfs_soc:file r_file_perms;
 
 #============= surfaceflinger ==============
-allow surfaceflinger vendor_default_prop:file r_file_perms;
+allow surfaceflinger vendor_file:file rx_file_perms;
+get_prop(surfaceflinger, vendor_default_prop)

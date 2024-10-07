@@ -1,0 +1,2 @@
+#============= system_suspend ==============
+allow system_suspend vendor_file:file r_file_perms;

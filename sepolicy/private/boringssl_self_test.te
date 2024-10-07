@@ -1,0 +1,3 @@
+#============= boringssl_self_test ==============
+allow boringssl_self_test vendor_file:file r_file_perms;
+

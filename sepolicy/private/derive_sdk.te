@@ -1,0 +1,2 @@
+#============= derive_sdk ==============
+allow derive_sdk vendor_file:file r_file_perms;
