@@ -162,8 +162,8 @@ PRODUCT_PACKAGES += \
     lights.msm8960
 
 # Trust
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # Media
 PRODUCT_COPY_FILES += \
