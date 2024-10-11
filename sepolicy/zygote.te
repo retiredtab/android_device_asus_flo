@@ -1,3 +1,6 @@
+#============= zygote ==============
+allow zygote vendor_file:file rx_file_perms;
+
 dontaudit zygote proc_cmdline:file r_file_perms;
 
 get_prop(zygote, bluetooth_prop);

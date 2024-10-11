@@ -1,0 +1,2 @@
+#============= rkpdapp ==============
+allow rkpdapp init:binder { call transfer };

@@ -1,1 +1,5 @@
+#============= bootanim ==============
+allow bootanim sysfs_graphics:file r_file_perms;
+allow bootanim vendor_file:file rx_file_perms;
+
 get_prop(bootanim, userspace_reboot_exported_prop);

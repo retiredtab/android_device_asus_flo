@@ -1,5 +1,18 @@
 #============= vendor_init ==============
-allow vendor_init bpf_progs_loaded_prop:property_service set;
 # allow vendor_init init_service_status_private_prop:file r_file_perms;
 # allow vendor_init recovery_update_prop:property_service set;
-
+allow vendor_init audio_prop:property_service set;
+allow vendor_init bluetooth_prop:property_service set;
+allow vendor_init bpf_progs_loaded_prop:property_service set;
+allow vendor_init build_prop:property_service set;
+allow vendor_init default_prop:file r_file_perms;
+allow vendor_init default_prop:property_service set;
+allow vendor_init hwui_prop:property_service set;
+allow vendor_init init_service_status_prop:property_service set;
+allow vendor_init media_data_file:dir create_dir_perms;
+allow vendor_init proc:file rw_file_perms;
+allow vendor_init radio_prop:file r_file_perms;
+allow vendor_init shell_data_file:dir search;
+allow vendor_init system_prop:file r_file_perms;
+allow vendor_init system_prop:property_service set;
+allow vendor_init userdebug_or_eng_prop:property_service set;

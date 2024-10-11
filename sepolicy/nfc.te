@@ -1,2 +1,6 @@
 #============= nfc ==============
+allow nfc firmware_file:dir search;
+allow nfc firmware_file:file r_file_perms;
+allow nfc nfc_device:chr_file rw_file_perms;
 allow nfc vendor_default_prop:file r_file_perms;
+allow nfc vendor_file:file rx_file_perms;

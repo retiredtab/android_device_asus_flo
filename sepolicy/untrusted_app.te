@@ -1,0 +1,7 @@
+#============= untrusted_app ==============
+# allow untrusted_app odsign_prop:file r_file_perms;
+allow untrusted_app build_attestation_prop:file r_file_perms;
+allow untrusted_app sysfs_graphics:file r_file_perms;
+allow untrusted_app system_file:file lock;
+allow untrusted_app userdebug_or_eng_prop:file read;
+allow untrusted_app vendor_file:file rx_file_perms;

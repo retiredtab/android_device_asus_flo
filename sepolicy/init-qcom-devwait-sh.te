@@ -1,0 +1,2 @@
+#============= init-qcom-devwait-sh ==============
+allow init-qcom-devwait-sh system_prop:file r_file_perms;

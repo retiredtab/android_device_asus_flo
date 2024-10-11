@@ -1,0 +1,2 @@
+#============= mediaprovider_app ==============
+# allow mediaprovider_app rootfs:file create_file_perms;

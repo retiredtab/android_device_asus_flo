@@ -1,3 +1,6 @@
+#============= mediacodec ==============
+allow mediacodec default_prop:file r_file_perms;
+
 allow mediacodec audio_device:chr_file rw_file_perms;
 r_dir_file(mediacodec, camera_prop)
 

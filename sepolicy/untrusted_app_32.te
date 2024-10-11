@@ -1,0 +1,25 @@
+#============= untrusted_app_32 ==============
+# allow untrusted_app_32 adbd_prop:file r_file_perms;
+# allow untrusted_app_32 fastbootd_protocol_prop:file r_file_perms;
+allow untrusted_app_32 aac_drc_prop:file r_file_perms;
+allow untrusted_app_32 ab_update_gki_prop:file r_file_perms;
+allow untrusted_app_32 adaptive_haptics_prop:file r_file_perms;
+allow untrusted_app_32 apex_info_file:file r_file_perms;
+allow untrusted_app_32 block_device:dir { getattr search };
+allow untrusted_app_32 exported_overlay_prop:file r_file_perms;
+allow untrusted_app_32 ffs_control_prop:file r_file_perms;
+allow untrusted_app_32 init:binder call;
+allow untrusted_app_32 linkerconfig_file:dir getattr;
+allow untrusted_app_32 mirror_data_file:dir getattr;
+allow untrusted_app_32 persist_file:dir getattr;
+allow untrusted_app_32 proc:file r_file_perms;
+allow untrusted_app_32 proc_asound:dir search;
+allow untrusted_app_32 proc_version:file r_file_perms;
+allow untrusted_app_32 serialno_prop:file r_file_perms;
+allow untrusted_app_32 sysfs:file r_file_perms;
+allow untrusted_app_32 sysfs_battery_supply:dir search;
+allow untrusted_app_32 sysfs_graphics:dir search;
+allow untrusted_app_32 sysfs_graphics:file r_file_perms;
+allow untrusted_app_32 user_profile_data_file:dir getattr;
+allow untrusted_app_32 vendor_file:file rx_file_perms;
+allow untrusted_app_32 wifi_hal_prop:file r_file_perms;

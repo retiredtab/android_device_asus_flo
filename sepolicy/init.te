@@ -1,3 +1,13 @@
+#============= init ==============
+allow init hal_drm_hwservice:hwservice_manager { add find };
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init rkpdapp:binder transfer;
+allow init self:process execmem;
+allow init untrusted_app_32:binder transfer;
+allow init vendor_file:file { execute execute_no_trans };
+allow init vndbinder_device:chr_file { ioctl open read write };
+
 allow init diag_device:chr_file unlink;
 allow init sysfs_mmc_host:file rw_file_perms;
 allow init sysfs:file { rw_file_perms setattr };

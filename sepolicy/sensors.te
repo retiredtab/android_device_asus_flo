@@ -1,3 +1,6 @@
+#============= sensors ==============
+allow sensors default_prop:file r_file_perms;
+
 # Started by init
 init_daemon_domain(sensors)
 

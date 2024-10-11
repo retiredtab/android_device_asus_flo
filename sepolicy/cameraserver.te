@@ -1,3 +1,8 @@
+#============= cameraserver ==============
+allow cameraserver vendor_default_prop:file r_file_perms;
+allow cameraserver vendor_file:file rx_file_perms;
+allow cameraserver video_device:chr_file rw_file_perms;;
+
 unix_socket_send(cameraserver, camera, camera);
 unix_socket_send(cameraserver, mpdecision, mpdecision);
 
